@@ -1,5 +1,5 @@
 {% set name = "groq" %}
-{% set version = "0.23.1" %}
+{% set version = "0.24.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/groq-{{ version }}.tar.gz
-  sha256: 952e34895f9bfb78ab479e495d77b32180262e5c42f531ce3a1722d6e5a04dfb
+  sha256: e821559de8a77fb81d2585b3faec80ff923d6d64fd52339b33f6c94997d6f7f5
 
 build:
   noarch: python
