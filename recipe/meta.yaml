@@ -1,5 +1,5 @@
 {% set name = "groq" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/groq-{{ version }}.tar.gz
-  sha256: ea971eca72d88e875a78567904bfb46a2f2e43907bfe400fc36a81150a4066d8
+  sha256: 9ec2b5b6a1c4856a8c6c38741353c5ab37472a4e3fded02af783750d849cc988
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatch-fancy-pypi-readme
     - pip
   run:
-    - typing_extensions >=4.10,<5
+    - typing_extensions >=4.14,<5
     - python >={{ python_min }}
     - httpx >=0.23.0,<1
     - pydantic >=1.9.0,<3
